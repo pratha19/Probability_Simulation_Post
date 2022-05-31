@@ -23,7 +23,7 @@ def plot_function(df, cols, title = None, alpha=None):
     
     fig.update_layout(title = title, xaxis_title='Pre-Test probability <br> that you have disease',
                       yaxis_title= 'Post-Test probability <br> that you have disease', 
-                      #autosize=True, #height = 600, 
+                      autosize=True, # height = 600, width = 600, 
                       font=dict(family="Courier New, monospace", size=16,color="White"), margin=dict(t=30, b=0, l=0, r=0)) #
     fig.update_layout(hovermode="x unified")
     fig.update_layout(legend=dict(
@@ -47,7 +47,7 @@ probs = [bayes_disease_test(P_disease = p_disease, P_positive_acc=P_positive_acc
 probs_df = pd.DataFrame(probs, columns = ['P_disease_pre_test', 'prob_covid_given_positive_test', 'prob_covid_given_negative_test', 'P_positive_acc', 'P_negative_acc'])
 
 # Plot!
-st.plotly_chart(plot_function(probs_df, cols = ['P_disease_pre_test', 'prob_covid_given_positive_test']), use_container_width=True)
+st.plotly_chart(plot_function(probs_df, cols = ['P_disease_pre_test', 'prob_covid_given_positive_test']), use_container_width=False)
 
 st.markdown(r"____")
 st.subheader("Notes")
