@@ -23,7 +23,7 @@ def plot_function(df, cols, title = None, alpha=None):
     
     fig.update_layout(title = title, xaxis_title='Pre-Test probability <br> that you have disease',
                       yaxis_title= 'Post-Test probability <br> that you have disease', 
-                      autosize=True, # height = 600, width = 600, 
+                      height = 600, width = 600, #autosize=True, # 
                       font=dict(family="Courier New, monospace", size=16,color="White"), margin=dict(t=30, b=0, l=0, r=0)) #
     fig.update_layout(hovermode="x unified")
     fig.update_layout(legend=dict(
