@@ -28,7 +28,7 @@ def plot_function(df, cols, title = None, alpha=None):
     fig.update_layout(hovermode="x unified")
     fig.update_layout(legend=dict(
                         yanchor="top",
-                        y=1.2,
+                        y=1.4,
                         xanchor="left",
                         x=0.01
                           ))
