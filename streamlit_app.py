@@ -61,11 +61,12 @@ st.markdown(r"* FP: False positives --> Number of people who don't have the dise
 st.markdown(r"* TN: True negatives --> Number of people who don't have the disease, and were correctly tested negative by the test.")
 st.markdown(r"* FN: False negatives --> Number of people who have the disease but were incorrectly tested negative by the test.")
 st.text("")
+st.markdown(r"____")
 
-st.markdown("__Positive predictive value__ (the value plotted on the y-axis above as Post Positive Test)")
+st.markdown("* __${Positive\ Predictive\ Value}$__ (the value plotted on the y-axis above as Post Positive Test)")
 st.markdown(r"is the probability that a person who has a positive test result most likely has the infection. We will have more confidence in a positive test if this value is higher. Pretest probability and test specificity have the greatest impact on false-positive rates. As the pretest probability and the specificity of the test increases, the false-positive rate decreases and the positive predictive value increases.")
 
-st.markdown("__Negative predictive value__ (1 minus the value plotted on the y-axis above as Post Negative Test)")
+st.markdown("* __${Negative\ Predictive\ Value}$__ (1 minus the value plotted on the y-axis above as Post Negative Test)")
 st.markdown(r"is the probability that a person who has a negative test result most likely does not have the infection. We will have more confidence in a negative test if this value is higher (that is, the plotted value in green is lower). Pretest probability and test sensitivity have the greatest impact on false-negative rates. As the pretest probability decreases, the false-negative rate decreases and the negative predictive value increases. As the sensitivity of the test increases, the false-negative rate decreases and the negative predictive value increases.")
 
-st.markdown(r"If a disease is rare, the probability that a test result reflects the patient’s true disease state may still be low, even with a really good test.") 
+st.markdown(r"* If a disease is rare, the probability that a test result reflects the patient’s true disease state may still be low, even with a really good test.") 
