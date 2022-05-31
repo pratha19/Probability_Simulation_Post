@@ -35,6 +35,7 @@ def plot_function(df, cols, title = None, alpha=None):
     return fig
 
 st.title('Post Probability vs. prior probability based on given Sensitivity and Specificity numbers. (For 1 test)')
+st.markdown(r"**Best viewed in Dark Mode. Go to Settings/Theme/ and Select Dark mode.")
 
 st.text('You can change the Sensitivity and Specificity numbers in the graph below.')
     
