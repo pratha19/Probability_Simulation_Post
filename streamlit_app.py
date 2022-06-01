@@ -50,6 +50,7 @@ probs_df = pd.DataFrame(probs, columns = ['P_disease_pre_test', 'prob_covid_give
 # Plot!
 st.plotly_chart(plot_function(probs_df, cols = ['P_disease_pre_test', 'prob_covid_given_positive_test']), use_container_width=False)
 
+st.markdown(r"The orange PPV curve should be tucked in the top left corner, maximizing the area beneath, for you to have a high confidence in a positive test result being true. Similarly, the green (1 - NPV) curve should be tucked along the right bottom corner, minimizing the area beneath, to give you a high confidence in a negative test result being true.")
 st.markdown(r"____")
 st.subheader("Notes")
 st.markdown(r"* __Sensitivity__: the ability of a test to correctly identify patients with a disease. It is given by, \
