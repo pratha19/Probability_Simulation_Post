@@ -34,7 +34,9 @@ def plot_function(df, cols, title = None, alpha=None):
                           ))
     return fig
 
-st.title('Post Probability vs. prior probability based on given Sensitivity and Specificity numbers. (For 1 test)')
+st.title('Using Bayes’ to interpret COVID-19 rapid home test results: Probability Simulation Part 1–2 ([link to Medium post](https://towardsdatascience.com/how-to-interpret-covid-19-rapid-home-test-results-using-bayes-probability-simulation-part-1-2-edfb1d1bc224) )')
+st.header('Post Probability vs. prior probability based on given Sensitivity and Specificity numbers. (For 1 test)')
+
 st.markdown(r"**Best viewed in Dark Mode. Go to Settings/Theme/ and Select Dark mode.")
 
 st.text('You can change the Sensitivity and Specificity numbers in the graph below.')
